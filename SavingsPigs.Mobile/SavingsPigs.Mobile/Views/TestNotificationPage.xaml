@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SavingsPigs.Mobile.Views.TestNotificationPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Dear Programmer!&#x0a;Here you can send various types of notifications and test their detection."
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                Margin="40,20,20,20"/>
+            <Button Margin="0,10,0,0" Text="Send random notification"
+                        Command="{Binding PushRandomNotification}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+            <Button Margin="0,10,0,0" Text="Send ING notification"
+                        Command="{Binding PushINGNotification}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+            <Button Margin="0,10,0,0" Text="Send mBank notification"
+                        Command="{Binding PushMBankNotification}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+            <Button Margin="0,10,0,0" Text="Send PKO notification"
+                        Command="{Binding PushPKONotification}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
